@@ -11,3 +11,4 @@ AllCops:
  
 Metrics/LineLength:
   Max: 128
+

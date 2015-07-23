@@ -4,11 +4,6 @@ machine:
   timezone:
     Asia/Tokyo # Set the timezone
 
-  # Version of ruby to use
-  ruby:
-    version:
-      2.2.1
-
   # Override /etc/hosts
   hosts:
     circlehost: 127.0.0.1
