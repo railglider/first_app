@@ -35,3 +35,8 @@ dependencies:
   post:
     - ./bin/spring binstub --all
     
+
+test:
+  pre:
+    - ./bin/bundle exec rubocop
+    - ./bin/rake test
