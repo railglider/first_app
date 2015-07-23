@@ -1,0 +1,13 @@
+inherit_from: .rubocop_todo.yml
+
+AllCops:
+  Exclude:
+    - vendor/**/*
+    - db/**/*
+    - bin/**
+    - config/unicorn.rb
+  RunRailsCops: true
+  DisplayCopNames: true
+ 
+Metrics/LineLength:
+  Max: 128
