@@ -40,3 +40,8 @@ test:
   pre:
     - ./bin/bundle exec rubocop
     - ./bin/rake test
+    
+database:
+  override:
+    - mv config/database.ci.yml config/database.yml
+    - bundle exec rake db:create db:migrate --trace
