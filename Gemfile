@@ -43,5 +43,7 @@ group :development, :test do
   gem 'spring', '1.1.3'
   
   gem 'thin'
+  
+  gem 'rspec'
 end
 
