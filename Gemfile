@@ -45,5 +45,6 @@ group :development, :test do
   gem 'thin'
   
   gem 'rspec'
+  gem 'spring-commands-rspec'
 end
 
