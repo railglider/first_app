@@ -19,3 +19,9 @@ machine:
     CIRCLE_ENV: test
     RAILS_ENV: test
 #    DATABASE_URL: postgres://ubuntu:@127.0.0.1:5432/circle_test
+
+general:
+  branches:
+    ignore:
+      # sandbox以下はビルドしない
+      - /sandbox\/.*/
