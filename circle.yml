@@ -30,11 +30,12 @@ dependencies:
 #  pre:
 #    - gem uninstall bundler # use a custom version of bundler
 #    - gem install bundler --pre
-  cache_directories:
-    - "vendor/bundle"
+#  cache_directories:
+#    - "vendor/bundle"
 
   override:
-    - bundle install -j4 --path=vendor/bundle:
+#    - bundle install -j4 --path=vendor/bundle:
+    - bundle install --path=vendor/bundle:
         timeout: 180
   
   post:

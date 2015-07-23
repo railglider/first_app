@@ -45,6 +45,8 @@ group :development, :test do
   gem 'thin'
   
   gem 'rspec'
+  gem 'rspec-rails'
   gem 'spring-commands-rspec'
+  gem 'rubocop'
 end
 
