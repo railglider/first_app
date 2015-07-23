@@ -34,8 +34,7 @@ dependencies:
 #    - "vendor/bundle"
 
   override:
-#    - bundle install -j4 --path=vendor/bundle:
-    - bundle install --path=vendor/bundle:
+    - bundle install -j4 --path=vendor/bundle:
         timeout: 180
   
   post:
