@@ -25,3 +25,15 @@ general:
     ignore:
       # sandbox以下はビルドしない
       - /sandbox\/.*/
+      
+dependencies:
+#  pre:
+#    - gem uninstall bundler # use a custom version of bundler
+#    - gem install bundler --pre
+
+  override:
+    - bundle install:
+        timeout: 180
+  
+  post:
+    - ./bin/spring binstub --all
